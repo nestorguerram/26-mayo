@@ -1,0 +1,25 @@
+body {
+    font-family: 'Courier New', Courier, monospace, Helvetica, sans-serif;
+    background-color: lightblue;
+
+}
+h1 {
+    color:brown;
+}
+
+p {
+    color:yellowgreen;
+}
+
+.relative {
+ position: relative;
+ top: 20px;
+ left: 120px;
+ background-color: lightblue;
+ }
+ .parrafo{
+
+ }
+ .titulo{
+    color:blue;
+ }
