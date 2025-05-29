@@ -1,25 +1,62 @@
 body {
-    font-family: 'Courier New', Courier, monospace, Helvetica, sans-serif;
-    background-color: rgb(159, 198, 211);
-
-}
-h1 {
-    color:brown;
-}
-
-p {
-    color:yellowgreen;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-.relative {
- position: relative;
- top: 20px;
- left: 120px;
- background-color: lightblue;
- }
- .parrafo{
+header, footer {
+    text-align: center;
+    padding: 2em 1em;
+    background-color: #4a90e2;
+    color: white;
+}
 
- }
- .titulo{
-    color:blue;
- }
+main {
+    padding: 2em;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 2em;
+    background: white;
+    padding: 1.5em;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+a.boton, button {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.6em 1.2em;
+    background-color: #4a90e2;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+a.boton:hover, button:hover {
+    background-color: #357ABD;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 1.5em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+footer p {
+    margin: 0.3em 0;
+}
