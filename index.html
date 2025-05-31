@@ -1,130 +1,52 @@
-<!---DOCTYPE html>--->
-
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" /> <!-- solo formato -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sitio</title>
-    <style>
-        body {
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            background: linear-gradient(to right, hsl(275, 35%, 75%), #63525a);
-            color: white;
-            margin: 50;
-            padding: 10;
-        }
-        header, footer {
-            text-align: center;
-            padding: 0 em;
-            background-color: rgb(85, 77, 78);
-        }
-        main {
-            padding: 10 em;
-        }
-        section {
-            margin-bottom: 1em;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 0.3em;
-            border-radius: 10px;
-        }
-        h1, h2 {
-            color: #ffccff;
-        }
-        a.boton {
-            display: inline-block;
-            margin-top: 1em;
-            padding: 0.5em 1em;
-            background-color: #ff69b4;
-            color: white;
-            text-decoration: none;
-            border-radius: 10px;
-        }
-        ul {
-            list-style: none;
-            padding: 0 ;
-        }
-        li::before {
-            content: "*";
-            color: #ffff99;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Mi Segunda Página Web</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <h1>Mi Sitio Web</h1>
-        <p>Innovación y tecnología para tu vida diaria</p>
-    </header>
+<body class="index">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="yo.html">Yo</a></li>
+        <li><a href="hobby.html">Hobby</a></li>
+        <li><a href="links.html">Links</a></li>
+        <li><a href="varios.html">Varios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section>
-            <h2>Contacto</h2>
-            <p>Directo y Personal</p>
-            <a class="boton" href="#">Contactame Ahora</a>
-        </section>
+  <main>
+    <h1>Mi segunda pagina Web</h1>
+    <p class="saludo">
+      Hola, esta página web fue creada en el año 2025 para aprender código, utilizar GitHub y explorar datos. Soy estudiante y esta es parte de mi aprendizaje.
+    </p>
 
-        <section>
-            <h2>Servicios</h2>
-            <ul>
-                <li><strong>Personales</strong> — CONOCE MÁS</li>
-                <li><strong>Profesional</strong> — CONOCE MÁS</li>
-                <li><strong>Ocio</strong> — CONOCE MÁS</li>
-            </ul>
-        </section>
+    <div class="iconos">
+      <img src="imagenes/instagram.png" alt="Instagram">
+      <img src="imagenes/arsmate.png" alt="Arsmate">
+      <img src="imagenes/linkedin.png" alt="LinkedIn">
+      <img src="imagenes/correo.png" alt="Correo">
+      <img src="imagenes/cara_feliz.png" alt="Cara feliz">
+    </div>
 
-        <section>
-            <h2>Acceso</h2>
-            <h3>Software</h3>
-            <p>Podrás descargar una serie de programas útiles para ti.</p>
+    <div class="contador">
+      <p>Visitas: <span id="contador">0</span></p>
+    </div>
 
-            <h3>Literatura</h3>
-            <p>Lee, aprende, capacítate. Te dejo links para tu conocimiento y autoaprendizaje.</p>
-
-            <h3>Aplicaciones</h3>
-            <p>Descarga aplicaciones útiles para tu equipo móvil.</p>
-
-            <h3>Varios</h3>
-            <ul>
-                <li>Varios 1</li>
-                <li>Varios 2</li>
-                <li>Varios 3</li>
-                <li>Lista de sitios de interés y para tu móvil</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Preguntas Frecuentes</h2>
-
-            <h3>¿Preguntas frecuentes de software?</h3>
-            <p>Una sección de preguntas frecuentes facilita que los usuarios obtengan información sobre tu empresa. El formato de preguntas y respuestas hace que sea más fácil que los usuarios se sientan identificados.</p>
-
-            <h3>¿Preguntas frecuentes de hardware?</h3>
-            <p>Una sección de preguntas frecuentes facilita que los usuarios obtengan información sobre tu empresa. El formato de preguntas y respuestas hace que sea más fácil que los usuarios se sientan identificados.</p>
-
-            <h3>¿Preguntas frecuentes sobre lo divino?</h3>
-            <p>Te invito a no escuchar falacias, no venimos del mono. El mono y la mona producen monitos hasta hoy. No a la gente depravada cegada por la concupiscencia. No se sometas a la fornicación.</p>
-        </section>
-
-        <section>
-            <h2>Conóceme</h2>
-            <p>La innovación y la tecnología te pueden ayudar en tu trabajo, vida diaria, en todo momento. No hemos nacido con conocimiento, en el transcurso de nuestro crecimiento hemos aprendido, desde hablar, comer, movernos, hasta podemos interpretar el clima solo con nuestra vista o sentido común. Concéntrate y confía en lo que importa y aprende conmigo.</p>
-        </section>
-
-        <section>
-            <h2>Contáctanos</h2>
-            <p><strong>Teléfono:</strong> (56) 1234 5678</p>
-            <p><strong>Correo:</strong> nestor.guerra@xxxx.com</p>
-            <button>Onlyfans</button> <button>PornHub</button>
-        </section>
-
-        <section>
-            <a class="boton" href="#">COMENCEMOS YA!!!</a>
-            <p>Señales nítidas</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Sitio Web de Servicio Táctil 3D</p>
-        <p>REDES | CONTÁCTANOS</p>
+    <footer class="pie">
+      <p>© 2025 Sitio Web de Servicio IA (inteligencia Artesanal)</p>
+      <p>REDES | CONTÁCTANOS</p>
     </footer>
+  </main>
+
+  <script>
+    let visitas = localStorage.getItem('visitas') || 0;
+    visitas++;
+    localStorage.setItem('visitas', visitas);
+    document.getElementById('contador').textContent = visitas;
+  </script>
 </body>
 </html>
