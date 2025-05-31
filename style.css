@@ -1,39 +1,61 @@
+/* Estilo general para index.html */
 body.index {
   background-color: white;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 10px;
+  font-size: 20px;
   margin: 0;
   padding: 0;
+}
+
+body.index h1 {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  gap: 20px;
 }
 
 nav ul li {
   display: inline;
-  margin-right: 15px;
 }
 
 nav ul li a {
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 20px;
   text-decoration: none;
   color: black;
+  padding: 5px 10px;
 }
 
 .saludo {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 10px;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+}
+
+.iconos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
 }
 
 .iconos img {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
+  width: 30px;
+  height: 30px;
 }
 
 .contador {
@@ -43,19 +65,23 @@ nav ul li a {
   color: black;
   border: 1px solid black;
   display: inline-block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer.pie {
   margin-top: 20px;
-  font-size: 10px;
+  font-size: 14px;
+  text-align: center;
 }
 
-/* modulo de yo.html */
+/* Estilo para yo.html */
 body.yo {
   background-image: url("imagenes/fondo_yo.jpg");
   background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 10px;
+  font-size: 20px;
 }
 
 .imagen-yo img {
@@ -68,18 +94,18 @@ body.yo {
 .descripcion p {
   width: 300px;
   text-align: justify;
-  font-size: 10px;
+  font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .info {
-  font-size: 10px;
+  font-size: 20px;
 }
 
-/* modulo para Hobby */
+/* Estilo para hobby.html */
 body.hobby {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 10px;
+  font-size: 20px;
   background-color: white;
 }
 
@@ -88,6 +114,7 @@ body.hobby {
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 20px;
+  justify-content: center;
 }
 
 .recuadro {
@@ -103,13 +130,12 @@ body.hobby {
   object-fit: cover;
 }
 
-
-/* cuerpo de links */
+/* Estilo para links.html */
 body.links {
   background-image: url("imagenes/fondo_links.jpg");
   background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 10px;
+  font-size: 20px;
 }
 
 .links h1 {
@@ -117,7 +143,7 @@ body.links {
 }
 
 .descripcion-links {
-  font-size: 10px;
+  font-size: 20px;
   margin-bottom: 15px;
 }
 
@@ -127,23 +153,24 @@ body.links {
 
 .lista-links a {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 10px;
+  font-size: 20px;
   text-decoration: none;
   color: blue;
 }
 
-
-/* cuerpo para varios */
+/* Estilo para varios.html con fondo de video */
 body.varios {
   background-color: white;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 10px;
+  font-size: 20px;
+  color: black;
 }
 
-/* cuerpo para contacto */
+
+/* Estilo para contacto.html */
 body.contacto {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 10px;
+  font-size: 20px;
   background-color: white;
 }
 
@@ -159,13 +186,13 @@ input[type="text"],
 input[type="email"],
 textarea {
   padding: 5px;
-  font-size: 10px;
+  font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 input[type="submit"] {
   padding: 5px 10px;
-  font-size: 10px;
+  font-size: 20px;
   background-color: #007BFF;
   color: white;
   border: none;
