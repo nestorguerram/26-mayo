@@ -18,6 +18,11 @@ body.index h1 {
   font-family: 'DreamingOutloud', cursive;
   font-size: 36px;
 }
+body.index h2 {
+  text-align: center;
+  font-family: 'DreamingOutloud', cursive;
+  font-size: 36px;
+}
 
 /* Navegación general */
 nav {
