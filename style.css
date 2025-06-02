@@ -39,6 +39,10 @@ body.index h3 {
   color: grey;
   line-height: 1.6;
 }
+
+.fuente-segundo-parrafo li {
+     margin-bottom: 10px;
+}
 /* Navegación */
 nav {
   display: flex;
@@ -100,7 +104,6 @@ nav ul li a:hover {
 footer.pie {
   margin-top: 5%;
   font-size: 10px;
-
   text-align: center;
 }
 
@@ -194,7 +197,7 @@ body.varios {
   background-position: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
-  color: black
+  color: black;
 }
 
 .galeria {
@@ -205,9 +208,9 @@ body.varios {
 
 
 }
-.base-descripcion {
-  /*width: 820px;  o un valor fijo como 700px */
-  /*margin-left: 50px;
+/*.base-descripcion { 
+  width: 820px;  o un valor fijo como 700px 
+  margin-left: 50px;
   margin-right: 50px;
   margin-top: 10px;
   padding: 10px;
@@ -217,8 +220,8 @@ body.varios {
   border-radius: 8px;
   text-align: justify;
   font-size: 15px;
-  font-family: 'Roboto'; */
-}
+  font-family: 'Roboto'; 
+}*/
 
 
 /* HOBBY.HTML */
@@ -302,11 +305,11 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start; /* Alinea todo a la izquierda */
+  align-items: flex-start; /* pone todo a la izquierda */
   gap: 20px;
   max-width: 400px;
   height: 400px;
-  margin: 50px 0 50px 50px; /* Despega del borde izquierdo */
+  margin: 50px 0 50px 50px; /* separa del borde izquierdo */
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
@@ -331,18 +334,6 @@ body.contacto {
   font-size: 20px;
   color: rgb(104, 9, 9);
 }
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start; /* Alinea todo a la izquierda */
-  gap: 20px;
-  max-width: 400px;
-  height: 400px;
-  margin: 50px 0 50px 50px; /* Despega del borde izquierdo */
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
-}
+
 
 

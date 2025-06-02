@@ -32,11 +32,14 @@
 
     <h3>¿Qué encontrarás aquí?</h3>
     <ul class="fuente-segundo-parrafo">
-            <li>Mi portafolio: proyectos que iré creando mientras avanzo en mi formación como analista y desarrollador.</li> <br>
-            <li>Mi trayectoria: información sobre mis estudios, experiencias y logros, tanto académicos como personales.</li> <br>
-            <li>Recursos y enlaces útiles: compartiré contenido que pueda ayudarte en tu día a día, y que estaré actualizando de manera constante.</li> <br>
+            <li>Mi portafolio: proyectos que iré creando mientras avanzo en mi formación como analista y desarrollador.</li> 
+            
+            <li>Mi trayectoria: información sobre mis estudios, experiencias y logros, tanto académicos como personales.</li> 
+            
+            <li>Recursos y enlaces útiles: compartiré contenido que pueda ayudarte en tu día a día, y que estaré actualizando de manera constante.</li> 
+            
             <li>Contacto directo: si tienes dudas, ideas, sugerencias o simplemente quieres conversar sobre tecnología, desarrollo, diseño o motos, ¡puedes escribirme!</li>
-        </class=>
+        
     </ul>
 
 
@@ -44,19 +47,32 @@
       <p>Visitas: <span id="contador">0</span></p>
     </div>
 
-    <footer class="pie">
+    
+  </main>
+
+  <footer class="pie">
       <p>© 2025 Sitio Web de Servicio IA (inteligencia Artesanal)</p>
       <p>REDES | CONTÁCTANOS</p>
     </footer>
-  </main>
 
   <div class="iconos">
-    <img src="imagenes/instagram.jpg" alt="Instagram">
-    <img src="imagenes/onlyfan.jpg" alt="Onlyfan">
-    <img src="imagenes/linkedin.jpg" alt="LinkedIn">
-    <img src="imagenes/correo.jpg" alt="Correo">
-    <img src="imagenes/cara_feliz.jpg" alt="Cara feliz">
-  </div>
+  <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"> <!-- a href : permite hacer click en iconos */--> 
+    <img src="imagenes/instagram.jpg" alt="Ir al perfil de Instagram">
+  </a>
+  <a href="https://onlyfans.com" target="_blank" aria-label="OnlyFans"> <!-- tarjet= "_blak"-< abre los enlaces en otra pagina-->
+    <img src="imagenes/onlyfan.jpg" alt="Ir al perfil de OnlyFans">
+  </a>
+  <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn"> <!-- aria-label mejora laaccesibilidad-->
+    <img src="imagenes/linkedin.jpg" alt="Ir al perfil de LinkedIn">
+  </a>
+  <a href="mailto:miemail@gmail.com" aria-label="Enviar correo"> <!-- describe la accion-->
+    <img src="imagenes/correo.jpg" alt="Enviar un correo electrónico">
+  </a>
+  <a href="https://www.inacap.cl" target="_blank" aria-label="Sitio de Inacap">
+    <img src="imagenes/cara_feliz.jpg" alt="Ir a la web de INACAP">
+  </a>
+</div>
+
 
   <script>
     let visitas = localStorage.getItem('visitas') || 0;
