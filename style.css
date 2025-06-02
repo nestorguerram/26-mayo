@@ -18,7 +18,7 @@ body.index .overlay {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.7); /* fondo blanco semitransparente */
+  background-color: rgba(255, 255, 255, 0.4); /* fondo blanco semitransparente */
   z-index: -1;
 }
 
@@ -55,7 +55,7 @@ nav ul {
 }
 
 nav ul li a {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "arial",Georgia,serif;
   font-weight: bold;
   font-size: 20px;
   text-decoration: none;
@@ -63,7 +63,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: gray;
+  color: rgb(68, 210, 212);
 }
 
 /* Recuadro del saludo */
@@ -72,11 +72,11 @@ nav ul li a:hover {
   padding: 20px;
   border: 2px solid black;
   border-radius: 10px;
-  background-color: #fdfdfd;
+  background-color: white 
   font-family: "Times New Roman", Times, serif;
   font-size: 18px;
   width: 80%;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Contador de visitas */
@@ -140,14 +140,7 @@ body.yo h1 {
    align-items: start; /* o flex-start*/
 }
 
-/*
-.descripcion {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-*/
+
 .descripcion {
   flex: 1;
 }
@@ -184,9 +177,9 @@ body.yo h1 {
   margin-right: 50px;
   margin-top: 10px;
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-left: 4px solid black;
-  border-right: 4px solid black;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-left: 4px solid gray;
+  border-right: 4px solid gray;
   border-radius: 8px;
   text-align: justify;
   font-size: 15px;
@@ -194,12 +187,14 @@ body.yo h1 {
 }
 
 
-
-/* HOBBY.HTML */
-body.hobby {
+/* Varios */
+body.varios {
+  background-image: url("imagenes/varios_fondo.jpg");  
+  background-size: cover;
+  background-position: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
-  background-color: white;
+  color: black
 }
 
 .galeria {
@@ -210,6 +205,88 @@ body.hobby {
 
 
 }
+.base-descripcion {
+  /*width: 820px;  o un valor fijo como 700px */
+  /*margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-left: 4px solid black;
+  border-right: 4px solid black;
+  border-radius: 8px;
+  text-align: justify;
+  font-size: 15px;
+  font-family: 'Roboto'; */
+}
+
+
+/* HOBBY.HTML */
+body.hobby {
+    background-image: url("imagenes/fondo_hobby.png");
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: white;
+}
+/* Contenedor general */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  gap: 20px;
+  justify-items: center; /* Centra las imágenes horizontalmente */
+  padding: 30px;
+}
+
+/* Cada recuadro de imagen */
+.recuadro {
+  width: 250px;
+  height: 250px;
+  border: 3px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+/* Imágenes */
+.recuadro img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/*
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+  */
+.galeria-hobby {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* de a 2 columnas */
+  gap: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7); /* cuadro translúcido */
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.foto img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 3px solid #444;
+  border-radius: 8px;
+}
+
+
 
 /*  links */
 
