@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,6 +8,7 @@
 </head>
 <body class="contacto">
   <header>
+    
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
@@ -19,7 +21,10 @@
   </header>
 
   <main>
+  
+
     <!-- <h1>Contactame</h1> -->
+     
     <h2 class="titulo-principal">Mensajes</h2>
     <form action="mailto:tu_correo@example.com" method="post" enctype="text/plain">
       <label for="nombre">Nombre:</label>
@@ -33,6 +38,51 @@
 
       <input type="submit" value="Enviar">
     </form>
+  </main>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Datos de contacto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="contacto">
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="yo.html">Yo</a></li>
+        <li><a href="hobby.html">Hobby</a></li>
+        <li><a href="links.html">Links</a></li>
+        <li><a href="varios.html">Varios</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="titulo-principal">Mensajes</h2>
+
+    <!-- Formulario dentro del div -->
+    <div class="formulario-contacto">
+      <form action="mailto:tu_correo@example.com" method="post" enctype="text/plain">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="6" required></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+    
   </main>
 </body>
 </html>

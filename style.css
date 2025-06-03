@@ -344,15 +344,22 @@ form {
 .lista-links a:hover {
   color: whitesmoke; /* Color llamativo al pasar el mouse */
 }
-/*  contacto */
+
+/* contacto */
 
 body.contacto {
   background-image: url("imagenes/fondo_contacto.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: left;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   color: rgb(104, 9, 9);
+  
+}
+
+.formulario-contacto {
+  margin-left: 30px; /* Mueve el formulario completo hacia la derecha */
+  max-width: 400px;   /* Limita el ancho para que no se vea estirado */
 }
 
 
