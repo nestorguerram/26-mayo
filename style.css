@@ -270,6 +270,37 @@ body.hobby {
   object-fit: cover;
   display: block;
 }
+/*.recuadro {
+  flex-direction: column;
+  text-align: center;*/
+
+.recuadro {
+  width: 250px;
+  border: 3px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3); /* también translúcido */
+}
+
+.recuadro p.desc {
+  background-color: rgba(255, 255, 255, 0.3); /* Blanco con transparencia */
+  padding: 8px;
+  margin-top: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  color: black;
+  width:100%
+}
+
+main {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 40px;
+  margin: 20px;
+  border-radius: 10px;
+}
 
 /*
 .galeria {
