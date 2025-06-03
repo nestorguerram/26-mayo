@@ -354,7 +354,18 @@ body.contacto {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   color: rgb(104, 9, 9);
+  margin:0;
+  padding: 0;
   
+}
+/* Imagen centrada */
+.imagen-contacto {
+  text-align: center;
+  margin-top: 20px;
+}
+.imagen-contacto img {
+  width: 150px;
+  height: auto;
 }
 
 .formulario-contacto {
@@ -362,5 +373,47 @@ body.contacto {
   max-width: 400px;   /* Limita el ancho para que no se vea estirado */
 }
 
+/* Contenedor del formulario */
+.formulario-contacto {
+  margin: 30px auto;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
 
 
+/* Campos de texto y textarea */
+.formulario-contacto input[type="text"],
+.formulario-contacto input[type="email"],
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Textarea (mensaje) */
+.formulario-contacto textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+/* Botón de envío */
+.formulario-contacto input[type="submit"] {
+  background-color: rgb(104, 9, 9);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formulario-contacto input[type="submit"]:hover {
+  background-color: rgb(150, 30, 30);
+}
