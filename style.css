@@ -83,6 +83,15 @@ nav ul li a:hover {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* clase de titulos */
+.titulo-principal {
+  text-align: left;
+  margin: 30px 30px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+
 /* Contador de visitas */
 .contador {
   margin-top: 30px;
@@ -125,16 +134,15 @@ footer.pie {
 body.yo {
   background-image: url("imagenes/yo_fondo.jpg");
   background-size: cover;
-  /*background-position: center;*/
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
 
 body.yo h1 {
   text-align: left;
-  width: 15%;
-  max-width: 1000px;
-  margin: 40px ;
+  width: 10px;
+  max-width: 10px;
+  margin: 20px ;
 }
 .contenido-yo {
    display: flex;
@@ -226,6 +234,8 @@ body.varios {
 
 /* HOBBY.HTML */
 body.hobby {
+    
+    width: 100%;
     background-image: url("imagenes/fondo_hobby.png");
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -299,13 +309,22 @@ body.links {
   background-position: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
-  color: black
+  color: black;
 }
+
+.descripcion-links {
+  margin-left: 30px; /* Ajusta este valor según lo que necesites */
+  max-width: 800px;   /* Opcional: limita el ancho para buena lectura */
+  text-align: justify; /* Opcional: mantiene buena presentación del texto */
+}
+
+
 form {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start; /* pone todo a la izquierda */
+  /*justify-content: space-between;*/
+  align-items: flex-start ; /* pone todo a la izquierda    flex-start margin: 900px;*/
+  
   gap: 20px;
   max-width: 400px;
   height: 400px;
@@ -317,6 +336,7 @@ form {
 .lista-links a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
+  margin: 30px;
   text-decoration: none;
   color: goldenrod; /* Contraste con fondo azul */
 }
