@@ -237,6 +237,7 @@ body.hobby {
     
     width: 100%;
     background-image: url("imagenes/fondo_hobby.png");
+    background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     background-color: white;
@@ -251,16 +252,19 @@ body.hobby {
 }
 
 /* Cada recuadro de imagen */
+
 .recuadro {
   width: 250px;
-  height: 250px;
   border: 3px solid #333;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  background-color: white;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  min-height: 350px;
+  padding: 10px;
 }
 
 /* Imágenes */
@@ -274,7 +278,7 @@ body.hobby {
   flex-direction: column;
   text-align: center;*/
 
-.recuadro {
+/*.recuadro {
   width: 250px;
   border: 3px solid #333;
   border-radius: 10px;
@@ -282,8 +286,9 @@ body.hobby {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.3); /* también translúcido */
-}
+  background-color: rgba(255, 255, 255, 0.3); también translúcido 
+  min-height: 600px;
+}*/
 
 .recuadro p.desc {
   background-color: rgba(255, 255, 255, 0.3); /* Blanco con transparencia */
@@ -301,6 +306,20 @@ main {
   margin: 20px;
   border-radius: 10px;
 }
+
+/*para ocultar la imagen*/
+.descripcion-oculta {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-align: justify;
+  color: #444;
+  transition: all 0.3s ease;
+}
+
 
 /*
 .galeria {
@@ -332,6 +351,14 @@ main {
 
 
 
+
+
+/* Esta clase se añade dinámicamente para mostrar la descripción */
+.mostrar {
+  display: block !important; /* Fuerza que se muestre */
+}
+
+
 /*  links */
 
 body.links {
@@ -350,20 +377,21 @@ body.links {
 }
 
 
-form {
+/*form {
   display: flex;
   flex-direction: column;
-  /*justify-content: space-between;*/
-  align-items: flex-start ; /* pone todo a la izquierda    flex-start margin: 900px;*/
+  justify-content: space-between;
+  align-items: flex-start ; pone todo a la izquierda    flex-start margin: 900px;
   
   gap: 20px;
   max-width: 400px;
   height: 400px;
-  margin: 50px 0 50px 50px; /* separa del borde izquierdo */
+  margin: 50px 0 50px 50px;  separa del borde izquierdo 
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
-}
+}*/
+
 .lista-links a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
@@ -408,7 +436,7 @@ body.contacto {
 .formulario-contacto {
   margin: 30px auto;
   max-width: 400px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 1);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);

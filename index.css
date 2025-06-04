@@ -1,0 +1,140 @@
+/* 
+   index.css
+   Estilos exclusivos para index.html
+   ------------------------------------------- */
+
+/* ----- Estilos generales del cuerpo de la página ----- */
+body.index {
+  position: relative;
+  background-image: url("imagenes/index_fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Roboto';
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Capa semitransparente superpuesta al fondo */
+body.index .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  z-index: -1;
+}
+
+/* ----- Estilos de encabezados ----- */
+body.index h1,
+body.index h2 {
+  text-align: center;
+  font-family: 'DreamingOutloud', cursive;
+  font-size: 36px;
+}
+
+body.index h3 {
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 20px;
+}
+
+/* ----- Fuente alternativa para segundo párrafo ----- */
+.fuente-segundo-parrafo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: grey;
+  line-height: 1.6;
+}
+
+.fuente-segundo-parrafo li {
+  margin-bottom: 10px;
+}
+
+/* ----- Navegación principal ----- */
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  font-family: "Arial", Georgia, serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover {
+  color: rgb(68, 210, 212);
+}
+
+/* ----- Caja de saludo destacada ----- */
+.saludo-caja {
+  margin: 30px auto;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  width: 80%;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ----- Título principal reutilizable ----- */
+.titulo-principal {
+  text-align: left;
+  margin: 30px 30px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* ----- Contador de visitas ----- */
+.contador {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3px 8px;
+  border: 3px solid black;
+  background-color: rgb(100, 192, 189);
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  display: block;
+  width: fit-content;
+  border-radius: 8px;
+}
+
+/* ----- Pie de página ----- */
+footer.pie {
+  margin-top: 5%;
+  font-size: 10px;
+  text-align: center;
+}
+
+/* ----- Iconos finales ----- */
+.iconos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.iconos img {
+  width: 30px;
+  height: 30px;
+}
